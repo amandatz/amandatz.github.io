@@ -1,0 +1,30 @@
+.header {
+  margin: 0 auto;
+  border-bottom: 1px solid variables.$black-hover;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  margin: 0 auto;
+  width: variables.$container-width;
+  padding: 1.5rem variables.$container-padding;
+
+  * {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+.leftColumn {
+    justify-self: start;
+}
+
+.middleColumn {
+    justify-self: center;
+}
+
+.rightColumn {
+    justify-self: end;
+}
