@@ -1,17 +1,17 @@
 import React from 'react';
+import Link from 'next/link';
 // import { Button } from '@components';
-import { BiLogoGithub } from "react-icons/bi";
 import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
     return <header className={styles.header}>
         <nav className={styles.navbar}>
-            <div className={styles.leftColumn}>
+            <div>
                 {/* <Button.Icon><BiLogoGithub /></Button.Icon> */}
             </div>
-            <div className={styles.rightColumn}>
-                {/* <Button.Standard> Blog </Button.Standard>
-                <Button.Standard> About </Button.Standard> */}
+            <div>
+                <Link href="/about">About</Link>
+                <Link href="/blog">Blog</Link>
             </div>
         </nav>
     </header>;

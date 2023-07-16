@@ -1,31 +1,21 @@
 .header {
   position: sticky;
   top: 0;
+  display: grid;
+  justify-content: center;
   border-bottom: 1px solid variables.$border-color;
   background-color: variables.$background-secondary;
 }
 
 .navbar {
   display: flex;
-  width: min(896px, 100vw - 2 * variables.$container-padding);
+  width: variables.$container-width;
+  padding: variables.$container-padding;
   justify-content: space-between;
   align-items: center;
 
   * {
     display: flex;
-    align-items: center;
-    gap: 4px;
+    gap: 0.5rem;
   }
-}
-
-.leftColumn {
-    justify-self: start;
-}
-
-.middleColumn {
-    justify-self: center;
-}
-
-.rightColumn {
-    justify-self: end;
 }
