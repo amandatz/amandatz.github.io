@@ -1,6 +1,6 @@
 import Container from "./Container";
 import Header from "./Header";
-// import Button from "./Button";
+import BlogCard from "./BlogCard";
 import Footer from "./Footer";
 
-export { Container, Header, Footer };
+export { Container, Header, Footer, BlogCard };

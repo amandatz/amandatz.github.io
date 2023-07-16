@@ -1,8 +1,51 @@
+import { BlogCard } from '@components';
+
+const placeholderList = [
+  {
+    Link: '#',
+    Title: 'The Wonders of Quantum Mechanics',
+    Date: '2023-07-01',
+    Description: 'Exploring the fascinating world of quantum mechanics and its implications in modern physics.',
+    Tags: ['Quantum Physics', 'Science', 'Physics'],
+  },
+  {
+    Link: '#',
+    Title: 'The Marvels of Astronomy: Exploring the Cosmos',
+    Date: '2023-07-02',
+    Description: 'Unraveling the mysteries of the universe, from black holes to distant galaxies.',
+    Tags: ['Astronomy', 'Space', 'Cosmology'],
+  },
+  {
+    Link: '#',
+    Title: 'Advancements in Genetic Engineering',
+    Date: '2023-07-03',
+    Description: 'Examining the latest breakthroughs in genetic engineering and their potential applications. Examining the latest breakthroughs in genetic engineering and their potential applications. Examining the latest breakthroughs in genetic engineering and their potential applications.',
+    Tags: ['Genetics', 'Biotechnology', 'Science'],
+  },
+  {
+    Link: '#',
+    Title: 'The Future of Artificial Intelligence',
+    Date: 'July 4, 2023',
+    Description: 'A glimpse into the exciting possibilities and ethical considerations of AI technology.',
+    Tags: ['Artificial Intelligence', 'Technology', 'Ethics'],
+  },
+];
+
+
 export default function Home() {
   return (
-    <div>
-      <h1>Blog Page</h1>
-      <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</p>
-    </div>
+    <section>
+      <div>
+        {placeholderList.map(posts =>
+          <BlogCard
+            Link={posts.Link}
+            Title={posts.Title}
+            Date={posts.Date}
+            Description={posts.Description}
+            Tags={posts.Tags}
+          />
+        )}
+      </div >
+    </section>
   )
 }

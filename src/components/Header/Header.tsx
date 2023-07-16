@@ -1,9 +1,8 @@
-import React from 'react';
 import Link from 'next/link';
 // import { Button } from '@components';
 import styles from './Header.module.scss';
 
-const Header: React.FC = () => {
+const Header = () => {
     return <header className={styles.header}>
         <nav className={styles.navbar}>
             <div>
