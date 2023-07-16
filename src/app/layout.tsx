@@ -2,7 +2,7 @@ import '@styles/main.scss';
 
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-import { Container, Header } from '@components'
+import { Container, Footer, Header } from '@components'
 
 const poppins = Poppins({
   weight: ['400', '700'],
@@ -24,6 +24,7 @@ export default function RootLayout({
       <body>
         <Header />
         <Container>{children}</Container>
+        <Footer />
       </body>
     </html>
   )
