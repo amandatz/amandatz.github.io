@@ -1,0 +1,10 @@
+.buttonLink {
+    padding: 0.5rem 0.75rem;
+    transition: variables.$transition;
+    border-radius: 0.25rem;
+    color: variables.$text-primary;
+
+    &:hover {
+        background-color: variables.$black-hover;
+    }
+}

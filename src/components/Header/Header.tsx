@@ -1,5 +1,5 @@
 import Link from 'next/link';
-// import { Button } from '@components';
+import { ButtonLink } from '@components';
 import styles from './Header.module.scss';
 
 const Header = () => {
@@ -9,8 +9,8 @@ const Header = () => {
                 {/* <Button.Icon><BiLogoGithub /></Button.Icon> */}
             </div>
             <div>
-                <Link href="/about">About</Link>
-                <Link href="/blog">Blog</Link>
+                <ButtonLink href="/about">About</ButtonLink>
+                <ButtonLink href="/blog">Blog</ButtonLink>
             </div>
         </nav>
     </header>;
