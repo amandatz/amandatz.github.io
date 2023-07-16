@@ -1,14 +1,15 @@
 .header {
-  margin: 0 auto;
-  // border-bottom: 1px solid variables.$black-hover;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid variables.$border-color;
+  background-color: variables.$background-secondary;
 }
 
 .navbar {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  margin: 0 auto;
-  width: variables.$container-width;
-  padding: 1.0rem variables.$container-padding;
+  display: flex;
+  width: min(896px, 100vw - 2 * variables.$container-padding);
+  justify-content: space-between;
+  align-items: center;
 
   * {
     display: flex;

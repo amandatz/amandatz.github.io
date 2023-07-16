@@ -5,18 +5,15 @@ import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
     return <header className={styles.header}>
-        <div className={styles.navbar}>
+        <nav className={styles.navbar}>
             <div className={styles.leftColumn}>
                 {/* <Button.Icon><BiLogoGithub /></Button.Icon> */}
             </div>
-            <h3 className={styles.middleColumn}>
-                Amanda Zanette
-            </h3>
             <div className={styles.rightColumn}>
                 {/* <Button.Standard> Blog </Button.Standard>
                 <Button.Standard> About </Button.Standard> */}
             </div>
-        </div>
+        </nav>
     </header>;
 };
 
