@@ -1,4 +1,4 @@
-import { BlogCard } from '@components';
+import { Blog } from '@components';
 
 const placeholderList = [
   {
@@ -34,18 +34,16 @@ const placeholderList = [
 
 export default function Home() {
   return (
-    <section>
-      <div>
-        {placeholderList.map(posts =>
-          <BlogCard
-            Link={posts.Link}
-            Title={posts.Title}
-            Date={posts.Date}
-            Description={posts.Description}
-            Tags={posts.Tags}
-          />
-        )}
-      </div >
-    </section>
+    <Blog.Section>
+      {placeholderList.map(posts =>
+        <Blog.Card
+          Link={posts.Link}
+          Title={posts.Title}
+          Date={posts.Date}
+          Description={posts.Description}
+          Tags={posts.Tags}
+        />
+      )}
+    </Blog.Section>
   )
 }

@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import styles from './BlogCard.module.scss';
+import styles from './Card.module.scss';
 
-type BlogCardProps = {
+type CardProps = {
     Link: string;
     Title: string;
     Date: string;
@@ -9,10 +9,10 @@ type BlogCardProps = {
     Tags: string[];
 };
 
-const BlogCard = (props: BlogCardProps) => {
+const Card = (props: CardProps) => {
     return <Link href={props.Link}>
-        <div className={styles.blogCard}>
-            <h1 className={styles.title}>{props.Title}</h1>
+        <div className={styles.card}>
+            <h2 className={styles.title}>{props.Title}</h2>
             <time className={styles.date}>{props.Date}</time>
             <p className={styles.description}>{props.Description}</p>
             <div className={styles.tagContainer}>
@@ -24,4 +24,4 @@ const BlogCard = (props: BlogCardProps) => {
     </Link>
 };
 
-export default BlogCard;
+export default Card;
