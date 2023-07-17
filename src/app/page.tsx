@@ -1,4 +1,5 @@
 import { Blog } from '@components';
+import HelloWord from './hello.mdx';
 
 const placeholderList = [
   {
@@ -35,6 +36,7 @@ const placeholderList = [
 export default function Home() {
   return (
     <Blog.Section>
+      <HelloWord />
       {placeholderList.map(posts =>
         <Blog.Card
           Link={posts.Link}

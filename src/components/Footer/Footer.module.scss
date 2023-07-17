@@ -1,3 +1,5 @@
+@use "@styles/_variables.scss";
+
 .footer {
   border-top: 1px solid variables.$border-color;
   padding: variables.$container-padding;
