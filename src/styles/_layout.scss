@@ -37,3 +37,24 @@ time {
   font-family: 'IBM Plex Mono', monospace;
 }
 
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #080508 #1f1f1f;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #080508;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1f1f1f;
+  border-radius: 14px;
+}
+
