@@ -6,6 +6,7 @@ type SectionProps = {
 
 const Section = ({ children }: SectionProps) => {
     return <section>
+        <h1 className={styles.title}>Blog</h1>
         <div className={styles.section}>{children}</div>
     </section>;
 };
