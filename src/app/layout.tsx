@@ -1,7 +1,7 @@
-import '@styles/main.scss';
+import '~/styles/main.scss';
 
 import type { Metadata } from 'next'
-import { Container, Footer, Header } from '@components'
+import { Container, Footer, Header } from '~/components'
 
 export const metadata: Metadata = {
   title: 'Personal blog',

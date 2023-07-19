@@ -1,4 +1,3 @@
-import Card from './Card';
-import Section from './Section';
+import Blog from './Blog';
 
-export { Card, Section };
+export default Blog;

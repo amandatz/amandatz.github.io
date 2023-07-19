@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { ButtonLink } from '@components';
+import { ButtonLink } from '~/components';
 import styles from './Header.module.scss';
 
 const Header = () => {

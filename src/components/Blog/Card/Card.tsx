@@ -16,8 +16,8 @@ const Card = (props: CardProps) => {
             <time className={styles.date}>{props.Date}</time>
             <p className={styles.description}>{props.Description}</p>
             <div className={styles.tagContainer}>
-                {props.Tags.map((tag) => {
-                    return <div><small>{tag}</small></div>;
+                {props.Tags?.map((tag, index) => {
+                    return <div key={index}><small>{tag}</small></div>;
                 })}
             </div>
         </div>

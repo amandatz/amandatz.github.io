@@ -1,6 +1,6 @@
 import styles from './Footer.module.scss';
 
-import { ButtonLink } from '@components';
+import { ButtonLink } from '~/components';
 import { BiLogoLinkedin, BiLogoGithub } from 'react-icons/bi';
 
 const _iconSize = 28;
