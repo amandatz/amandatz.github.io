@@ -9,7 +9,7 @@ const Header = () => {
             </div>
             <div>
                 <ButtonLink href="/about">About</ButtonLink>
-                <ButtonLink href="/blog">Blog</ButtonLink>
+                <ButtonLink href="/">Blog</ButtonLink>
             </div>
         </nav>
     </header>;
