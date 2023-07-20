@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import styles from './ButtonLink.module.scss';
 
 type ButtonLinkProps = {
     href: string;
@@ -7,7 +6,7 @@ type ButtonLinkProps = {
 };
 
 const ButtonLink = ({ href, children }: ButtonLinkProps) => {
-    return <Link href={href} className={styles.buttonLink}>
+    return <Link href={href} className='flex items-center w-fit gap-2 py-0.5 px-2 transition ease-in-out rounded hover:bg-white/10'>
         {children}
     </Link>;
 };

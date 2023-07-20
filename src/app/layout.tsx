@@ -1,7 +1,7 @@
-import '~/styles/main.scss';
+import '~/styles/main.css';
 
 import type { Metadata } from 'next'
-import { Container, Footer, Header } from '~/components'
+import { Footer, Header } from '~/components'
 
 export const metadata: Metadata = {
   title: 'Personal blog',
@@ -14,10 +14,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className='scroll-smooth'>
+      <body className='relative bg-black text-white'>
         <Header />
-        <Container>{children}</Container>
+        {children}
         <Footer />
       </body>
     </html>

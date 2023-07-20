@@ -1,6 +1,10 @@
-@use "variables";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&family=Poppins:ital,wght@0,300;0,600;0;900;1,300;1,600&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Poppins:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "article";
 
 *,
 *::before,
@@ -13,13 +17,7 @@
 }
 
 html {
-  font-size: 90%;
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: variables.$background-primary;
-  color: variables.$text-primary;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,10 +29,6 @@ p, span, a, li, input, textarea, button {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   line-height: 28px;
-}
-
-time {
-  font-family: 'IBM Plex Mono', monospace;
 }
 
 /* Firefox */
@@ -58,3 +52,7 @@ time {
   border-radius: 14px;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr min(100vw - 4rem, 736px) 1fr;
+}

@@ -1,16 +1,19 @@
 import { ButtonLink } from '~/components';
-import styles from './Header.module.scss';
 
 const Header = () => {
-    return <header className={styles.header}>
-        <nav className={styles.navbar}>
-            <div>
-                {/* <Button.Icon><BiLogoGithub /></Button.Icon> */}
+    return <header className='bg-black top-0 flex flex-col items-center border-b border-white/10 bg-blog'>
+        <nav className='container p-4'>
+            <div></div>
+            <div className='flex w-full justify-between items-center'>
+                <div>
+                    {/* <Button.Icon><BiLogoGithub /></Button.Icon> */}
+                </div>
+                <div className='flex gap-2'>
+                    <ButtonLink href="/about">About</ButtonLink>
+                    <ButtonLink href="/">Blog</ButtonLink>
+                </div>
             </div>
-            <div>
-                <ButtonLink href="/about">About</ButtonLink>
-                <ButtonLink href="/">Blog</ButtonLink>
-            </div>
+            <div></div>
         </nav>
     </header>;
 };

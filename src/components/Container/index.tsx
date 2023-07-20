@@ -1,3 +1,4 @@
-import Container from './Container';
+import MainContainer from './MainContainer'
+import BlogContainer from './BlogContainer'
 
-export default Container;
+export { MainContainer, BlogContainer }
