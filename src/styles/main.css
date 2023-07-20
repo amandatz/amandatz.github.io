@@ -40,6 +40,7 @@ p, span, a, li, input, textarea, button {
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 *::-webkit-scrollbar-track {
@@ -54,5 +55,5 @@ p, span, a, li, input, textarea, button {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr min(100vw - 4rem, 736px) 1fr;
+  grid-template-columns: 1fr min(100vw - 2rem, 608px) 1fr;
 }

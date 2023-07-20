@@ -5,7 +5,7 @@ type ContainerProps = {
 }
 
 const Container = ({ children }: ContainerProps) => {
-    return <main className='gap-[28px] container w-full p-4 justify-center items-center mx-[auto]'>
+    return <main className='container w-full lg:gap-8 py-2'>
         <div></div>
         {children}
         <div></div>

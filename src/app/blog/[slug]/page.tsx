@@ -11,14 +11,14 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
     return <BlogContainer>
         <BlogContainer.LeftSidebar>
-            <div className='sticky py-9 top-0'>
+            <div className='hidden lg:block sticky py-9 top-0'>
                 <ButtonLink href='/'><HiArrowLongLeft />See all posts</ButtonLink>
             </div>
         </BlogContainer.LeftSidebar>
         <BlogContainer.Main>
             <div>
                 <header>
-                    <h1 className='text-6xl my-9'>{post.title}</h1>
+                    <h1 className='text-5xl lg:text-6xl my-9'>{post.title}</h1>
                     <small>{formatDate(post.date)}</small>
                 </header>
                 <article className='article-content prose prose-invert max-w-none mt-9'>

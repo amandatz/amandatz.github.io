@@ -5,7 +5,7 @@ type BlogContainerProps = {
 }
 
 const BlogContainer = ({ children }: BlogContainerProps) => {
-    return <main className='relative gap-10 container w-full p-4 mx-[auto]'>
+    return <main className='container w-full lg:gap-8 py-4'>
         {children}
     </main>
 }
