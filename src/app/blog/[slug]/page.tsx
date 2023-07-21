@@ -8,6 +8,17 @@ export const generateStaticParams = async () => getPostsSlugs()
 
 export const dynamicParams = false
 
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+    const post = getPostBySlug(params.slug)
+
+    return {
+        title: post.title,
+        description: post.description,
+        // keywords: post.tags.split(',').map(tag => tag.trim()),
+       publisher: 'Amanda Zanette'
+    }
+  }
+
 export default async function Page({ params }: { params: { slug: string } }) {
     const post = getPostBySlug(params.slug)
 

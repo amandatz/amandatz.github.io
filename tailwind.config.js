@@ -9,7 +9,6 @@ module.exports = {
       colors: {
         royalblue: '#4169e1',   // primary
         black: '#080508',       // bg-primary
-        night: '#0a0a0a'        // bg-secondary
       },
       fontFamily: {
         'sans': ['Poppins', 'sans-serif'],
