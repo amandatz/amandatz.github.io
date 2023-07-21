@@ -1,4 +1,4 @@
-import { formatDate } from '~/lib/dates'
+import { formatDate } from '~/lib/utils'
 import { getPostBySlug, getPostsSlugs } from '~/lib/posts'
 import { MdxComponent, BlogContainer, ButtonLink } from '~/components'
 
@@ -12,22 +12,20 @@ export default async function Page({ params }: { params: { slug: string } }) {
     return <BlogContainer>
         <BlogContainer.LeftSidebar>
             <div className='hidden lg:block sticky py-9 top-0'>
-                <ButtonLink href='/'><HiArrowLongLeft />See all posts</ButtonLink>
+                <ButtonLink href='/' className='flex items-center'><HiArrowLongLeft />See all posts</ButtonLink>
             </div>
         </BlogContainer.LeftSidebar>
         <BlogContainer.Main>
-            <div>
+            <article className='article-content max-w-none mt-9 prose prose-invert'>
                 <header>
                     <h1 className='text-5xl lg:text-6xl my-9'>{post.title}</h1>
                     <small>{formatDate(post.date)}</small>
                 </header>
-                <article className='article-content prose prose-invert max-w-none mt-9'>
-                    <MdxComponent code={post.body.code} />
-                </article>
-            </div>
+                <MdxComponent code={post.body.code} />
+            </article>
         </BlogContainer.Main>
         <BlogContainer.RightSidebar>
-
+            {/* table of contents */}
         </BlogContainer.RightSidebar>
     </BlogContainer>
 

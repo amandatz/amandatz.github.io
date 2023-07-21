@@ -4,8 +4,7 @@ import type { Metadata } from 'next'
 import { Footer, Header } from '~/components'
 
 export const metadata: Metadata = {
-  title: 'Personal blog',
-  description: 'Personal blog',
+  title: 'Amanda Zanette'
 }
 
 export default function RootLayout({

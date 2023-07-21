@@ -13,9 +13,8 @@ export default function Home() {
           Description={post.description}
           Date={post.date}
           Link={`/blog/${post.slug}`}
-          Tags={post.tags}
-        />;
+        />
       })}
-    </Blog.Section>;
+    </Blog.Section>
   </MainContainer>
 }

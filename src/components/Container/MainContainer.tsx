@@ -5,9 +5,9 @@ type ContainerProps = {
 }
 
 const Container = ({ children }: ContainerProps) => {
-    return <main className='container w-full lg:gap-8 py-2'>
+    return <main className='container w-full lg:gap-8 my-4 mx-auto'>
         <div></div>
-        {children}
+        <div>{children}</div>
         <div></div>
     </main>
 }

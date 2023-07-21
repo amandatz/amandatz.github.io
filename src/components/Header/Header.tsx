@@ -1,8 +1,8 @@
 import { ButtonLink } from '~/components';
 
 const Header = () => {
-    return <header className='bg-black top-0 flex flex-col items-center border-b border-white/10 bg-blog'>
-        <nav className='container p-4'>
+    return <header className='bg-black border-b border-white/10'>
+        <nav className='container w-full lg:gap-8 my-4 mx-auto'>
             <div></div>
             <div className='flex w-full justify-between items-center'>
                 <div>

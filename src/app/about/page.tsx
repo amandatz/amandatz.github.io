@@ -1,5 +1,14 @@
-import AboutMe from '~/data/about-me.mdx'
+import { MainContainer } from '~/components'
 
 export default function About() {
-    return <div></div>;
+    return <MainContainer>
+        <h1 className='text-4xl my-9'>About me</h1>
+        <p className='mb-4'> I'm Amanda, a software developer based in Brazil.</p>
+        <p className='mb-4'>You can find me on&nbsp;
+            <a className='underline hover:text-royalblue transform ease-in-out' href='https://www.linkedin.com/in/amanda-zanette/' target="_blank">Github</a>
+            &nbsp;and&nbsp;
+            <a className='underline hover:text-royalblue transform ease-in-out' href='https://github.com/amandatz' target="_blank">LinkedIn</a>.
+        </p>
+        <p className='mb-4'>Feel free to reach out, and let's have a chat!</p>
+    </MainContainer>
 }
