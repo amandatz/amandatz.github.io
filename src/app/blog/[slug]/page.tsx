@@ -2,9 +2,11 @@ import { formatDate } from '~/lib/utils'
 import { getPostBySlug, getPostsSlugs } from '~/lib/posts'
 import { MdxComponent, BlogContainer, ButtonLink } from '~/components'
 
-import { HiArrowLongLeft } from "react-icons/hi2";
+import { HiArrowLongLeft } from "react-icons/hi2"
 
 export const generateStaticParams = async () => getPostsSlugs()
+
+export const dynamicParams = false
 
 export default async function Page({ params }: { params: { slug: string } }) {
     const post = getPostBySlug(params.slug)
@@ -28,5 +30,4 @@ export default async function Page({ params }: { params: { slug: string } }) {
             {/* table of contents */}
         </BlogContainer.RightSidebar>
     </BlogContainer>
-
 }
