@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 @import "article";
+@import "mathjax";
 
 *,
 *::before,

@@ -1,4 +1,4 @@
-import { ButtonLink } from '~/components';
+import { ButtonLink } from '~/components'
 
 const Header = () => {
     return <header className='bg-black border-b border-white/10'>
@@ -15,7 +15,7 @@ const Header = () => {
             </div>
             <div></div>
         </nav>
-    </header>;
-};
+    </header>
+}
 
-export default Header;
+export default Header

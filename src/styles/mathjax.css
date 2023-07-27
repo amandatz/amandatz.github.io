@@ -1,0 +1,7 @@
+.math-display mjx-container[jax="SVG"] > svg {
+    margin: 0 auto;
+}
+
+.math svg {
+    display: inline;
+}

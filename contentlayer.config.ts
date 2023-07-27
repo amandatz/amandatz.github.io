@@ -2,7 +2,7 @@ import { defineDocumentType, makeSource } from 'contentlayer/source-files'
 
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
-import rehybeMathJax from 'rehype-mathjax'
+import rehypeMathJax from 'rehype-mathjax'
 import remarkMath from 'remark-math'
 
 export const Post = defineDocumentType(() => ({
@@ -32,7 +32,7 @@ export default makeSource({
         ],
         rehypePlugins: [
             rehypeSlug,
-            rehybeMathJax,
+            rehypeMathJax,
             [
                 rehypeAutolinkHeadings,
                 {
