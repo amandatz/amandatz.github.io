@@ -6,6 +6,19 @@ import ResponsiveImage from '~/components/Image'
 
 const components = {
     ResponsiveImage,
+    h1: ({ ...props }) => (
+        <h2
+            className="font-serif xl:text-4xl text-3xl"
+            {...props}
+        />
+    ),
+    h2: ({ ...props }) => (
+        <h3
+            className="font-sans xl:text-xl uppercase"
+            {...props}
+        />
+    ),
+    h4: ({ ...props }) => <h4 className="font-sans font-bold text-lg" {...props} />,
     a: ({ href = '', ...props }) => (
         <Link
             href={href}

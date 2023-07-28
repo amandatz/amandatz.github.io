@@ -9,17 +9,17 @@ date: '2023-07-25'
 
 During your lifetime, you've probably seen the 15-puzzle. The game consists of a 4x4 grid containing 15 tiles and an empty slot. With the tiles shuffled, the objective is to slide them back into order without taking them off the board.
 
-## The problem
+# The problem
 
 In the puzzle presented by Sam Loyd, all the pieces were initially in their correct positions, only with the 14th and 15th pieces reversed. A reward of $1000 was offered to the first person who could successfully solve it. 
 
 Despite several claims from different individuals, the prize remained unclaimed. It was eventually determined that the puzzle was impossible to solve.
 
-## Some considerations
+# Some considerations
 
 Before explaining why the challenge is impossible, there are some concepts that need to be mentioned.
 
-### Permutation
+## Permutation
 
 Every permutation $\sigma \in S_{n}$ can be defined by a matrix of order $2 \times n$ as follows
 
@@ -67,7 +67,7 @@ $$
 \rho=(123)(56)
 $$
 
-### Transposition
+## Transposition
 
 A **transposition** is a cycle of length 2, that is, it has the form (ab).
 
@@ -80,13 +80,13 @@ $$
 
 Although a given permutation can be decomposed into transpositions in various ways, it will always have an **even** or **odd** number of transpositions.
 
-### Parity
+## Parity
 
 The **parity** of a permutation can be defined based on the number of transpositions. If the number of transpositions is even, the parity is even; if the number of transpositions is odd, the parity is odd. 
 
 Since $\rho$ can be decomposed in 3 transpositions, the parity of the permutation is odd.
 
-### Sign
+## Sign
 
 The **sign** of a permutation $\sigma$ can be expressed as 
 $$
@@ -100,7 +100,7 @@ where $N(\sigma)$ is the number of transpositions.
 
 Hence, $sgn(\rho) = -1$.
 
-## Back to the challenge
+# Back to the challenge
 
 We first need to look at how the 15-puzzle works. As previously mentioned, the game consists of sliding the pieces in order to return them to the correct position. In a way, we would always be permutating a piece and the empty space.
 

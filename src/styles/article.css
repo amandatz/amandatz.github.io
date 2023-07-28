@@ -19,5 +19,6 @@
 
   .article-content .anchor:after {
     content: '#';
+    opacity: .75;
   }
   
