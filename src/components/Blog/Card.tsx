@@ -12,7 +12,7 @@ const Card = (props: CardProps) => {
     return <Link href={props.Link}>
         <div className='transition shadow-sm group'>
             <small className='font-sans text-neutral-400 text-xs'>{formatDate(props.Date)}</small>
-            <h2 className='mt-2 mb-1 font-serif transition ease-in-out group-hover:text-royalblue text-3xl'>{props.Title}</h2>
+            <h2 className='mt-2 mb-1 font-serif font-bold transition ease-in-out group-hover:text-royalblue text-3xl'>{props.Title}</h2>
             <p className='text-neutral-400 line-clamp-2'>{props.Description}</p>
         </div>
     </Link>
