@@ -1,7 +1,5 @@
 # Amanda Zanette
 
-## Getting Started
-
 After cloning the project, install the dependencies
 ```bash
 yarn install
