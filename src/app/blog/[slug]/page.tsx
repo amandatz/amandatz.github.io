@@ -30,7 +30,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <BlogContainer.Main>
             <article className='article-content max-w-none mt-9 prose prose-invert'>
                 <header>
-                    <h1 className='text-5xl lg:text-6xl my-9'>{post.title}</h1>
+                    <h1 className='font-serif text-5xl lg:text-6xl my-9'>{post.title}</h1>
                     <small>{formatDate(post.date)}</small>
                 </header>
                 <MdxComponent code={post.body.code} />
