@@ -5,6 +5,7 @@ import Footer from './Footer'
 import ButtonLink from './Button'
 import MdxComponent from './MdxComponent'
 import ResponsiveImage from './Image'
+import Anchor from './Anchor'
 
 export {
     MainContainer,
@@ -14,5 +15,6 @@ export {
     Blog,
     ButtonLink,
     MdxComponent,
-    ResponsiveImage
+    ResponsiveImage,
+    Anchor
 }

@@ -1,3 +1,3 @@
-import MdxComponent from './MdxComponent';
+import MdxComponent from './MdxComponent'
 
-export default MdxComponent;
+export default MdxComponent

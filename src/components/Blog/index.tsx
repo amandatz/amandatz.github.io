@@ -1,4 +1,4 @@
-import Card from './Card';
-import Section from './Section';
+import Card from './Card'
+import Section from './Section'
 
-export { Card, Section };
+export { Card, Section }
