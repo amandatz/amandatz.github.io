@@ -17,10 +17,6 @@
   text-rendering: optimizeLegibility;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 p, span, a, li, input, textarea, button {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -51,9 +47,9 @@ p, span, a, li, input, textarea, button {
 
 .container-grid {
   display: grid;
-  grid-template-columns: 1fr min(100vw - 2rem, 608px) 1fr;
+  grid-template-columns: 1fr min(100vw - 4rem, 608px) 1fr;
 }
 
 .container {
-  width: min(100vw - 2rem, 608px);
+  width: min(100vw - 4rem, 608px);
 }

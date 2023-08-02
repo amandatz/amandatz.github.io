@@ -3,12 +3,18 @@
     visibility: hidden;
     position: absolute;
     margin-left: -1.25em;
-    margin-top: 0.25em;
+    margin-top: 0.2em;
     padding-right: 0.5em;
     width: 80%;
     max-width: 720px;
     cursor: pointer;
     font-size: 80%;
+  }
+
+  @media (max-width: 767px) {
+    .article-content .anchor {
+      margin-left: -1em;
+    }
   }
 
   .article-content .anchor:hover,
