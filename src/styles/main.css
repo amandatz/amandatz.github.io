@@ -49,7 +49,11 @@ p, span, a, li, input, textarea, button {
   border-radius: 14px;
 }
 
-.container {
+.container-grid {
   display: grid;
   grid-template-columns: 1fr min(100vw - 2rem, 608px) 1fr;
+}
+
+.container {
+  width: min(100vw - 2rem, 608px);
 }

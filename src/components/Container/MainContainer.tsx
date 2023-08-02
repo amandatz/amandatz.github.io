@@ -5,10 +5,8 @@ type ContainerProps = {
 }
 
 const Container = ({ children }: ContainerProps) => {
-    return <main className='container w-full lg:gap-8 my-4 mx-auto'>
-        <div></div>
-        <div>{children}</div>
-        <div></div>
+    return <main className='container w-full my-4 mx-auto'>
+        <div className=''>{children}</div>
     </main>
 }
 

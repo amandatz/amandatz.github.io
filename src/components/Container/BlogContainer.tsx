@@ -5,7 +5,7 @@ type BlogContainerProps = {
 }
 
 const BlogContainer = ({ children }: BlogContainerProps) => {
-    return <main className='container w-full lg:gap-8 my-4 mx-auto'>
+    return <main className='container-grid w-full lg:gap-8 my-4 mx-auto'>
         {children}
     </main>
 }
