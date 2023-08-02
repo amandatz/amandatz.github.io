@@ -18,7 +18,7 @@ const components = {
             {...props}
         />
     ),
-    h4: ({ ...props }) => <h4 className='font-sans font-bold text-lg' {...props} />,
+    h3: ({ ...props }) => <h4 className='font-sans font-bold text-lg' {...props} />,
     a: ({ href = '', ...props }) => {
         if (href.startsWith('http'))
             return <Anchor href={href} {...props} />
